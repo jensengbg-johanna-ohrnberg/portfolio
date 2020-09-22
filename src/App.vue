@@ -28,7 +28,7 @@
 
   #nav > .home, .my-work, .about, .contact {
     padding: 1em;
-    font-size: 1.5em;
+    font-size: 1em;
     /*text-align: center;
     padding: 14px 16px;
     text-decoration: none;
