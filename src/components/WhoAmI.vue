@@ -21,6 +21,12 @@ export default {
     @import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
 
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
     .title {
         display: flex;
         justify-content: center;
@@ -66,60 +72,4 @@ export default {
         line-height: 1.5em;
         color: white;
     }
-
-    /*@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
-
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 3em;
-    }
-
-    .title {
-        color: #12B296;
-        font-family: 'Ranchers', cursive;
-        font-size: 30px;
-    }
-
-    .text {
-        color: #FFAA01;
-        font-family: 'Fira Sans', sans-serif;
-        font-size: 16px;
-        line-height: 2em;
-    }*/
-    /*.container {
-        display: grid;
-        grid-template-rows: 5em 10em;
-        margin-bottom: 5em;
-        margin-top: none;
-        margin-left: 30em;
-        margin-right: 30em;
-    }
-
-    .title {
-        grid-row: 1 / 2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #12B296;
-        font-family: 'Ranchers', cursive;
-        font-size: 40px;
-    }
-
-    .text {
-        grid-row: 2 / 3;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #FFAA01;
-        font-family: 'Fira Sans', sans-serif;
-        font-size: 18px;
-        line-height: 2em;
-        margin: 2em;
-        margin-top: 6em;
-        margin-bottom: 6em;
-    }*/
 </style>

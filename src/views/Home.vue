@@ -20,16 +20,4 @@ export default {
 
 <style scoped>
 
-  /*.home {
-    display: grid;
-    grid-template-rows: 25em 35em;
-  }
-
-  .who-am-i {
-    grid-row: 1 / 2;
-  }
-
-  .skills {
-    grid-row: 2 / 3;
-  }*/
 </style>
