@@ -21,8 +21,14 @@ export default {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 1em;
-        margin: 1em;
+        padding-right: 1em;
+        padding-left: 1em;
+        padding-top: none;
+        padding-bottom: none;
+        margin-right: 1em;
+        margin-left: 1em;
+        margin-top: none;
+        margin-bottom: none;
     }
     .title {
         color: rgba(81, 203, 238, 1);

@@ -1,8 +1,8 @@
 <template>
     <section class="container">
         <h1 class="title"> What is my goal? </h1>
-        <p class="text"> My goal is to get a job where I can develop my design skills.
-              I would like to be able to compare Front-End Development with sports or maybe even the ocean. </p>
+        <p class="text"> My goal is to be able to contribute with my knowledge and make a difference at work. </p>
+        <p class="text"> I want to contribute with positivity and team work, because team work makes the dream work. </p>
     </section>
 </template>
 
@@ -21,8 +21,14 @@ export default {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 1em;
-        margin: 1em;
+        padding-right: 1em;
+        padding-left: 1em;
+        padding-top: none;
+        padding-bottom: none;
+        margin-right: 1em;
+        margin-left: 1em;
+        margin-top: none;
+        margin-bottom: none;
     }
     .title {
         color: rgba(81, 203, 238, 1);
@@ -36,36 +42,4 @@ export default {
         font-family: 'Fira Sans', sans-serif;
         font-size: 20px;
     }
-    /*@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
-
-    .container {
-        display: grid;
-        grid-template-rows: 5em 10em;
-        margin-bottom: 5em;
-        margin-top: none;
-        margin-left: 30em;
-        margin-right: 30em;
-    }
-
-    .title {
-        grid-row: 1 / 2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #12B296;
-        font-family: 'Ranchers', cursive;
-        font-size: 40px;
-    }
-
-    .text {
-        grid-row: 2 / 3;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #FFAA01;
-        font-family: 'Fira Sans', sans-serif;
-        font-size: 18px;
-        line-height: 2em;
-    }*/
 </style>

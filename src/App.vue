@@ -12,8 +12,6 @@
 
 <style lang="scss">
   #app {
-    /*height: 100%;
-    width: 100%;*/
     background-color: #222222;
     background: repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 0 / 15px 15px;
   }
@@ -29,10 +27,6 @@
   #nav > .home, .my-work, .about, .contact {
     padding: 1em;
     font-size: 1em;
-    /*text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;*/
   }
 
   #nav > .home:hover, .my-work:hover, .about:hover, .contact:hover {

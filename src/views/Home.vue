@@ -1,7 +1,7 @@
 <template>
-  <section class="home">
-    <WhoAmI class="who-am-i" />
-    <Skills class="skills" />
+  <section>
+    <WhoAmI />
+    <Skills />
   </section>
 </template>
 
@@ -17,7 +17,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-
-</style>

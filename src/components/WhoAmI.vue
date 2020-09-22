@@ -2,7 +2,7 @@
     <section class="container">
         <h1 class="title"> JOHANNA ÖHRNBERG </h1>
         <section class="text">
-            <p> I'm a fantastic team player and I'm studying to become a FRONT-END DEVELOPER. </p>
+            <p> I'm a student who are studying to become a FRONT-END DEVELOPER. </p>
             <p> I'm in my third semester out of four and I am continously developing my skills. </p>
             <p> I'm now looking for an INTERNSHIP that will develop my skills even more. </p>
             <p> I am happy to take on new challenges and I will happily contribute with my knowledge. </p>

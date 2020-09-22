@@ -36,6 +36,12 @@ export default {
     @import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
     .info h4 {
         font-family: 'Ranchers', cursive;
         font-size: 30px;
@@ -44,7 +50,7 @@ export default {
 
     .info p {
         font-family: 'Fira Sans', sans-serif;
-        font-size: 20px;
+        font-size: 22px;
         color: white;
     }
 
@@ -58,30 +64,4 @@ export default {
         padding: 1em;
         margin: 1em;
     }
-    /*@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
-
-    .container {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    h4 {
-        color: #12B296;
-        font-family: 'Ranchers', cursive;
-        font-size: 30px;
-    }
-
-    p {
-        font-family: 'Rock Salt', cursive;
-        color: #FFAA01;
-        font-size: 20px;
-    }
-
-    li {
-       font-family: 'Rock Salt', cursive;
-       list-style: none;
-       color: #FFAA01;
-       font-size: 20px;
-    }*/
 </style>
