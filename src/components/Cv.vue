@@ -1,14 +1,13 @@
 <template>
     <section class="container">
-        <h1 class="title"> What is my goal? </h1>
-        <p class="text"> My goal is to be able to contribute with my knowledge and make a difference at work.
-                        I want to contribute with positivity and team work, because team work makes the dream work. </p>
+        <h1 class="title"> CV </h1>
+        <img class="img" src="../assets/cv.png" alt="cv">
     </section>
 </template>
 
 <script>
 export default {
-    name: "MyGoal"
+    name: "Strengths"
 }
 </script>
 
@@ -21,8 +20,8 @@ export default {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 0 1em 0 1em;
-        margin: 0 1em 0 1em;
+        padding: 0 1em 2em 1em;
+        margin: 0 1em 2em 1em;
     }
     .title {
         color: rgba(81, 203, 238, 1);
@@ -30,10 +29,13 @@ export default {
         font-size: 30px;
     }
 
-    .text {
-        color: white;
-        line-height: 1.5em;
-        font-family: 'Fira Sans', sans-serif;
-        font-size: 20px;
+    .img {
+        width: 100%;
+    }
+
+    @media only screen and (min-width: 600px) {
+        .img {
+            width: 40%;
+        }
     }
 </style>

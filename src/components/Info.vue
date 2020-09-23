@@ -40,6 +40,8 @@ export default {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        padding: 0.2em 1em 0 1em;
+        margin: 0.2em 1em 0 1em;
     }
 
     .info h4 {

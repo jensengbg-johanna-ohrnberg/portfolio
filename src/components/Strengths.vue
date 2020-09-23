@@ -1,8 +1,12 @@
 <template>
     <section class="container">
         <h1 class="title"> What are my strengths? </h1>
-        <p class="text"> My goal is to get a job where I can develop my design skills.
-              I would like to be able to compare Front-End Development with sports or maybe even the ocean. </p>
+        <p class="text"> I'm a fantastic team player who loves to make other people happy.
+                        I'm good at both oral and written english.
+                        I like to be creative and to come up with new design ideas.
+                        My love to sports has made me positive and energetic which I will bring with me to whatever working place I'm at.
+                        From other jobs I worked at, I have learned to handle stress well.
+                        I'm always focused on what I do and try to complete my tasks as fast as possible. </p>
     </section>
 </template>
 
@@ -21,14 +25,8 @@ export default {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-right: 1em;
-        padding-left: 1em;
-        padding-top: none;
-        padding-bottom: none;
-        margin-right: 1em;
-        margin-left: 1em;
-        margin-top: none;
-        margin-bottom: none;
+        padding: 0 1em 0 1em;
+        margin: 0 1em 0 1em;
     }
     .title {
         color: rgba(81, 203, 238, 1);
