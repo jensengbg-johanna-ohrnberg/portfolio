@@ -6,7 +6,7 @@
             <img src="../img/webshop-details.png" alt="details">
             <img src="../img/webshop-cart.png" alt="cart">
         </section>
-        <h1 class="title">Welcome to the Webshop</h1>
+        <h1 class="title">Welcome to Webshop</h1>
         <section class="flex">
             <section class="border">
             <h4> Type: </h4>
