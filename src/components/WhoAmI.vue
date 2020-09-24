@@ -34,31 +34,8 @@ export default {
         text-align: center;
         font-size: 3.5em;
         font-family: 'Ranchers', cursive;
-        margin: 20px 0 20px 0;
-        color: white;
-        -webkit-animation: glow 1s ease-in-out infinite alternate;
-        animation: glow 1s ease-in-out infinite alternate;
-    }
-
-    @-webkit-keyframes glow {
-        from {
-            text-shadow: 0 0 10px #fff,
-            0 0 20px #fff,
-            0 0 30px rgba(81, 203, 238, 1),
-            0 0 40px rgba(81, 203, 238, 1),
-            0 0 50px rgba(81, 203, 238, 1),
-            0 0 60px rgba(81, 203, 238, 1),
-            0 0 70px rgba(81, 203, 238, 1);
-        }
-        to {
-            text-shadow: 0 0 20px #fff,
-            0 0 30px #9ecaed,
-            0 0 40px #9ecaed,
-            0 0 50px #9ecaed,
-            0 0 60px #9ecaed,
-            0 0 70px #9ecaed,
-            0 0 80px #9ecaed;
-        }
+        margin: 40px 0 20px 0;
+        color: rgba(81, 203, 238, 1);
     }
 
     .text {

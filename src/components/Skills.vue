@@ -11,6 +11,7 @@
                 <li class="ux-design"> UX-Design </li>
                 <li class="ui-design"> UI-Design </li>
                 <li class="agile-methods"> Agile Methods: Scrum and Kanban </li>
+                <li class="jest"> TDD: Jest </li>
                 <li class="parcel"> Parcel </li>
                 <li class="docker"> Docker </li>
                 <li class="ci-cd"> CI/CD </li>
@@ -40,7 +41,7 @@ export default {
         align-items: center;
         font-family: 'Ranchers', cursive;
         font-size: 30px;
-        color: white;
+        color: rgba(81, 203, 238, 1);
     }
 
     .skills {
@@ -53,13 +54,13 @@ export default {
         margin: 1em;
     }
 
-    .html, .css, .javascript, .vuejs, .nodejs, .figma, .ux-design, .ui-design, .agile-methods, .parcel, .docker, .ci-cd {
+    .html, .css, .javascript, .vuejs, .nodejs, .figma, .ux-design, .ui-design, .agile-methods, .jest, .parcel, .docker, .ci-cd {
         border: 1px solid white;
         padding: 1em;
         margin: 1em;
         font-family: 'Fira Sans', sans-serif;
         color: white;
         font-size: 30px;
-        box-shadow: 10px 0px 20px 20px rgba(81, 203, 238, 1);
+        box-shadow: 0 0 20px 20px rgba(81, 203, 238, 1);
     }
 </style>

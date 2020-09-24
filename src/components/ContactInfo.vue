@@ -72,6 +72,10 @@ export default {
         text-decoration: none;
     }
 
+    .linkedin a:hover {
+        text-decoration: underline;
+    }
+
     .github-title {
         font-family: 'Fira Sans', sans-serif;
         color: white;

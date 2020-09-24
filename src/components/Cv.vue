@@ -1,7 +1,7 @@
 <template>
     <section class="container">
         <h1 class="title"> CV </h1>
-        <img class="img" src="../assets/cv.png" alt="cv">
+        <img class="img" src="../assets/cv-english.png" alt="cv">
     </section>
 </template>
 
