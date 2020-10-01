@@ -1,7 +1,13 @@
 <template>
-    <section class="container">
-        <h1 class="title"> CV </h1>
-        <img class="img" src="../assets/cv-english.png" alt="cv">
+    <section class="hero is-dark">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title"> CV </h1>
+                <figure class="image is-3by4">
+                    <img src="../assets/cv-english.png" alt="cv">
+                </figure>
+            </div>
+        </div>
     </section>
 </template>
 
@@ -12,7 +18,13 @@ export default {
 </script>
 
 <style scoped>
-    @import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    /*@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
     .container {
@@ -37,5 +49,5 @@ export default {
         .img {
             width: 40%;
         }
-    }
+    }*/
 </style>

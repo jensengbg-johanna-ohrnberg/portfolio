@@ -7,6 +7,7 @@ import Contact from "../views/Contact.vue";
 import Airbean from "../views/Airbean.vue";
 import EWallet from "../views/EWallet.vue";
 import Webshop from "../views/Webshop.vue";
+import MeetUp from "../views/MeetUp.vue";
 
 Vue.use(VueRouter);
 
@@ -45,6 +46,11 @@ const routes = [
     path: "/webshop",
     name: "Webshop",
     component: Webshop
+  },
+  {
+    path: "/meetup",
+    name: "meetup",
+    component: MeetUp
   }
 ];
 

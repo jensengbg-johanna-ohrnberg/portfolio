@@ -27,7 +27,7 @@ export default {
 </script>
 
 <style scoped>
-  .questions {
+  /*.questions {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -45,5 +45,5 @@ export default {
     .questions {
       flex-direction: column;
     }
-  }
+  }*/
 </style>

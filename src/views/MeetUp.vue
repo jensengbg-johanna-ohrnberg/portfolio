@@ -3,15 +3,16 @@
         <section class="hero is-info">
             <div class="hero-body">
                 <div class="container">
-                    <img src="../img/e-wallet-add-cards.png" alt="addcards">
-            <img src="../img/e-wallet-cards.png" alt="cards">
+                    <img src="../img/meetup-home.png" alt="home">
+                    <img src="../img/meetup-signup.png" alt="signup">
+                    <img src="../img/meetup-reviews.png" alt="reviews">
                 </div>
             </div>
         </section>
         <section class="hero is-dark">
             <div class="hero-body">
                 <div class="container">
-                    <h1 class="title">Welcome to E-Wallet</h1>
+                    <h1 class="title">Welcome to Meet Up</h1>
                 </div>
             </div>
         </section>
@@ -25,56 +26,31 @@
                         </div>
                         <div class="kort">
                             <h4 class="subtitle"> Requirements: </h4>
-                            <p> The requirements was to build a single page application in Vue.js. We got a design from the professor that we needed to follow. </p>
+                            <p> The requirements was to build a app using Vue.js. In the project we were supposed to use Jest to test our app. We were also supposed to use Docker to then be able to publish it in a optional cloud service. </p>
                         </div>
                         <div class="kort">
                             <h4 class="subtitle"> Functionality: </h4>
-                            <p> We made a e-wallet where you can have your credit cards in. In the app, the user is supposed to be able to add as many cards as possible and then activate one of them. </p>
+                            <p> We made a app where you can see upcoming meet ups and the sign up for one. Then after you've been to a meet up you can write a review on it. </p>
                         </div>
                         <div class="kort">
                             <h4 class="subtitle"> My Thoughts: </h4>
-                            <p> I thought it was a fun project. It was our first project in Vue.js so it was a bit challenging but I'm happy how it turned out. </p>
+                            <p> I thought it was a fun project where I learned a lot. Not just about testing and publishing which was the requirements but I also learned more about CSS and design. </p>
                         </div>
                     </article>
                 </div>
             </div>
         </section>
     </section>
-    <!--<section class="container">
-        <section class="images">
-            <img src="../img/e-wallet-add-cards.png" alt="addcards">
-            <img src="../img/e-wallet-cards.png" alt="cards">
-        </section>
-        <h1 class="title">Welcome to E-Wallet</h1>
-        <section class="flex">
-            <section class="border">
-            <h4> Type: </h4>
-                <p> This was a individual project in school made with Vue.js. </p>
-            </section>
-            <section class="border">
-            <h4> Requirements: </h4>
-                <p> The requirements was to build a single page application in Vue.js. We got a design from the professor that we needed to follow. </p>
-            </section>
-            <section class="border">
-            <h4> Functionality: </h4>
-                <p> We made a e-wallet where you can have your credit cards in. In the app, the user is supposed to be able to add as many cards as possible and then activate one of them. </p>
-            </section>
-            <section class="border">
-            <h4> My Thoughts: </h4>
-                <p> I thought it was a fun project. It was our first project in Vue.js so it was a bit challenging but I'm happy how it turned out. </p>
-            </section>
-        </section>
-    </section>-->
 </template>
 
 <script>
 export default {
-    name: "E-Wallet"
+    name: "Meetup"
 }
 </script>
 
 <style scoped>
-.container {
+    .container {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;

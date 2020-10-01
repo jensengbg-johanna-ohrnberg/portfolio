@@ -1,7 +1,7 @@
 <template>
   <section>
-    <WhoAmI />
-    <Skills />
+      <WhoAmI />
+      <Skills />
   </section>
 </template>
 

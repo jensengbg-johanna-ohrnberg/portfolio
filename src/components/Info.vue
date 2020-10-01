@@ -1,19 +1,21 @@
 <template>
-    <section class="container">
-        <section class="info">
-            <section class="name">
-                <h4> Name: </h4>
-                <p> Johanna Öhrnberg </p>
-            </section>
-            <section class="age">
-                <h4> Age: </h4>
-                <p> {{ calculateAge }} </p>
-            </section>
-            <section class="city">
-                <h4> City: </h4>
-                <p> Kungsbacka, Sweden </p>
-            </section>
-        </section>
+    <section class="hero is-info">
+        <div class="hero-body">
+            <div class="container">
+                <section class="flex">
+                    <h1 class="title"> Name: </h1>
+                    <p class="subtitle"> Johanna Öhrnberg </p>
+                </section>
+                <section class="flex">
+                    <h1 class="title"> Age: </h1>
+                    <p class="subtitle"> {{ calculateAge }} </p>
+                </section>
+                <section class="flex">
+                    <h1 class="title"> City: </h1>
+                    <p class="subtitle"> Kungsbacka, Sweden </p>
+                </section>
+            </div>
+        </div>
     </section>
 </template>
 
@@ -33,7 +35,24 @@ export default {
 </script>
 
 <style scoped>
-    @import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: row;
+    }
+
+    .flex p {
+        padding: 1.4em;
+    }
+    /*@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
     .container {
@@ -65,5 +84,5 @@ export default {
     .name p, .age p, .city p {
         padding: 1em;
         margin: 1em;
-    }
+    }*/
 </style>

@@ -1,5 +1,48 @@
 <template>
-    <section class="container">
+    <section>
+        <section class="hero is-info">
+            <div class="hero-body">
+                <div class="container">
+                    <img src="../img/webshop-products.png" alt="products">
+            <img src="../img/webshop-filter.png" alt="filter">
+            <img src="../img/webshop-details.png" alt="details">
+            <img src="../img/webshop-cart.png" alt="cart">
+                </div>
+            </div>
+        </section>
+        <section class="hero is-dark">
+            <div class="hero-body">
+                <div class="container">
+                    <h1 class="title">Welcome to Webshop</h1>
+                </div>
+            </div>
+        </section>
+        <section class="hero is-info">
+            <div class="hero-body">
+                <div class="container">
+                    <article>
+                        <div class="kort">
+                            <h4 class="subtitle"> Type: </h4>
+                            <p> This was a group project in school made with Vue.js. </p>
+                        </div>
+                        <div class="kort">
+                            <h4 class="subtitle"> Requirements: </h4>
+                            <p> The requirements was to build a Vue-app with TDD, test-driven development. We needed to work in a group of 3 to 5 people and our working method should be agile. </p>
+                        </div>
+                        <div class="kort">
+                            <h4 class="subtitle"> Functionality: </h4>
+                            <p> We built a webshop where you can buy soccer shoes. In the app, the user is supposed to be able to see all the products, filter between products, see details of a product, add a product to the shopping cart, change quantity of a product and see the total price in your shopping cart. </p>
+                        </div>
+                        <div class="kort">
+                            <h4 class="subtitle"> My Thoughts: </h4>
+                            <p> I thought it was kind of a hard project because you were supposed to test the functionality with jest before you create the app. It was a different mindset that we needed to work with, but it worked out in the end. </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!--<section class="container">
         <section class="images">
             <img src="../img/webshop-products.png" alt="products">
             <img src="../img/webshop-filter.png" alt="filter">
@@ -25,7 +68,7 @@
                 <p> I thought it was kind of a hard project because you were supposed to test the functionality with jest before you create the app. It was a different mindset that we needed to work with, but it worked out in the end. </p>
             </section>
         </section>
-    </section>
+    </section>-->
 </template>
 
 <script>
@@ -35,7 +78,40 @@ export default {
 </script>
 
 <style scoped>
-    @import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    img {
+        width: 10em;
+        margin: 1em;
+    }
+
+    article {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .kort {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 2em;
+        margin: 5em;
+        margin-top: 1em;
+        width: 20em;
+        border: 1px solid hsl(0, 0%, 21%);
+    }
+    /*@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
     .container {
@@ -99,5 +175,5 @@ export default {
         .border {
             width: 35%;
         }
-    }
+    }*/
 </style>

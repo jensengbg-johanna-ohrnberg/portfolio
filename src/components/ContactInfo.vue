@@ -1,11 +1,25 @@
 <template>
-    <section class="container">
-        <h1 class="title"> Contact Me </h1>
-        <p class="email"> j-ohrnberg@live.se </p>
-        <p class="number"> +46 703 - 73 43 20 </p>
-        <p class="linkedin"> <a href="https://www.linkedin.com/in/johanna-%C3%B6hrnberg-7a6b17196/"> Linkedin </a> </p>
-        <h4 class="github-title"> Find all my work on Github </h4>
-        <p class="github"> <a href="https://github.com/jensengbg-johanna-ohrnberg?tab=repositories"> <img src="../img/github-icon.png" alt="github"> </a> </p>
+    <section>
+        <section class="hero is-info">
+            <div class="hero-body">
+                <div class="container">
+                    <h1 class="title"> Contact Me </h1>
+                </div>
+            </div>
+        </section>
+        <section class="hero is-dark">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="content">
+                        <p> j-ohrnberg@live.se </p>
+                        <p> +46 703 - 73 43 20 </p>
+                        <p> <a class="linkedin" href="https://www.linkedin.com/in/johanna-%C3%B6hrnberg-7a6b17196/"> Linkedin </a> </p>
+                    </div>
+                    <h4 class="subtitle"> Find all my work on Github </h4>
+                    <p> <a href="https://github.com/jensengbg-johanna-ohrnberg?tab=repositories"> <img src="../img/github-icon.png" alt="github"> </a> </p>
+                </div>
+            </div>
+        </section>
     </section>
 </template>
 
@@ -16,7 +30,31 @@ export default {
 </script>
 
 <style scoped>
-    @import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    img {
+        width: 15em;
+        padding: 2em;
+    }
+
+    .linkedin {
+        text-decoration: none;
+        color: white;
+    }
+
+    .linkedin:hover {
+        color: hsl(204, 86%, 53%);
+    }
+
+    h4 {
+        padding: 2em;
+    }
+    /*@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
     .container {
@@ -84,5 +122,5 @@ export default {
     .github a img {
         width: 10em;
         height: 10em;
-    }
+    }*/
 </style>
