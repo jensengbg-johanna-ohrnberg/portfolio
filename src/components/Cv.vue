@@ -3,9 +3,7 @@
         <div class="hero-body">
             <div class="container">
                 <h1 class="title"> CV </h1>
-                <figure class="image is-3by4">
-                    <img src="../assets/cv-english.png" alt="cv">
-                </figure>
+                <img src="../assets/cv-english.png" alt="cv">
             </div>
         </div>
     </section>
@@ -23,6 +21,12 @@ export default {
         flex-direction: column;
         justify-content: center;
         text-align: center;
+    }
+
+    img {
+        display: block;
+        margin: auto;
+        width: 40rem;
     }
     /*@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
