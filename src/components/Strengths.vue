@@ -4,12 +4,12 @@
             <div class="container">
                 <h1 class="title"> What are my strengths? </h1>
                 <div class="content">
-                    <p> I'm a fantastic team player who loves to make other people happy. </p>
-                    <p> I'm good at both oral and written english. </p>
+                    <p> I am a driven student in Front-End Development with a passion for creating value through digital solution. </p>
+                    <p> I'm a fantastic team player who always strive to make customers happy. </p>
                     <p> I like to be creative and to come up with new design ideas. </p>
-                    <p> My love to sports has made me positive and energetic which I will bring with me to whatever working place I'm at. </p>
-                    <p> From other jobs I worked at, I have learned to handle stress well. </p>
-                    <p> I'm always focused on what I do and try to complete my tasks as fast as possible. </p>
+                    <p> I am always passionately commited to the work that I take on and I am always determined to finish a project with my fullest commitment and thoroughness. </p>
+                    <p> From my previous work experience I have learned to deal with stress well. </p>
+                    <p> As a person I am responsible, detail oriented and always have a positive mindset towards the challenges that I am faced with. </p>
                 </div>
             </div>
         </div>

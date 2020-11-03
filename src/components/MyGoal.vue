@@ -5,7 +5,7 @@
                 <h1 class="title"> What is my goal? </h1>
                 <div class="content">
                     <p> My goal is to be able to contribute with my knowledge and make a difference at work. </p>
-                    <p> I want to contribute with positivity and team work, because team work makes the dream work. </p>
+                    <p> I always strive to learn more and hope to develop my skills as a Front-End Developer even more. </p>
                 </div>
             </div>
         </div>
