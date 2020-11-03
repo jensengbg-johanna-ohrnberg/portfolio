@@ -4,8 +4,8 @@
             <div class="container">
                 <h1 class="title"> What are my strengths? </h1>
                 <div class="content">
-                    <p> I am a driven student in Front-End Development with a passion for creating value through digital solution. </p>
-                    <p> I'm a fantastic team player who always strive to make customers happy. </p>
+                    <p> I am a driven student in Front-End Development with a passion for creating value through digital solutions. </p>
+                    <p> I'm a fantastic team player who always strives to make customers happy. </p>
                     <p> I like to be creative and to come up with new design ideas. </p>
                     <p> I am always passionately commited to the work that I take on and I am always determined to finish a project with my fullest commitment and thoroughness. </p>
                     <p> From my previous work experience I have learned to deal with stress well. </p>
