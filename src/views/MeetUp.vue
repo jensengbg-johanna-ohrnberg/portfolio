@@ -22,19 +22,19 @@
                     <article>
                         <div class="kort">
                             <h4 class="subtitle"> Type: </h4>
-                            <p> This was a individual project in school made with Vue.js. </p>
+                            <p> This was a individual assignment in school made with Vue.js. </p>
                         </div>
                         <div class="kort">
                             <h4 class="subtitle"> Requirements: </h4>
-                            <p> The requirements was to build a app using Vue.js. In the project we were supposed to use Jest to test our app. We were also supposed to use Docker to then be able to publish it in a optional cloud service. </p>
+                            <p> The requirements were to develop an application using Vue.js. The purpose of the project was to use Jest to test our application. We were also supposed to use Docker in order to publish our application in an optional cloud service. </p>
                         </div>
                         <div class="kort">
                             <h4 class="subtitle"> Functionality: </h4>
-                            <p> We made a app where you can see upcoming meet ups and the sign up for one. Then after you've been to a meet up you can write a review on it. </p>
+                            <p> We developed an application where you can see upcoming meet ups as well as sign up for a specific meet up. The user was also supposed to be able to write a review after attending a meet up. </p>
                         </div>
                         <div class="kort">
                             <h4 class="subtitle"> My Thoughts: </h4>
-                            <p> I thought it was a fun project where I learned a lot. Not just about testing and publishing which was the requirements but I also learned more about CSS and design. </p>
+                            <p> I thought it was a fun project where I learned a lot. Not just about testing and publishing which were the requirements of the project, but I also developed my skills regarding CSS and design. </p>
                         </div>
                     </article>
                 </div>

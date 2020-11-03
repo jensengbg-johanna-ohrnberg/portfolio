@@ -21,15 +21,15 @@
                     <article>
                         <div class="kort">
                             <h4 class="subtitle"> Type: </h4>
-                            <p> This was a individual project in school made with Vue.js. </p>
+                            <p> This was a individual assignment in school made with Vue.js. </p>
                         </div>
                         <div class="kort">
                             <h4 class="subtitle"> Requirements: </h4>
-                            <p> The requirements was to build a single page application in Vue.js. We got a design from the professor that we needed to follow. </p>
+                            <p> The requirements were to build a single page application in Vue.js. We recieved design requirements that we needed to follow. </p>
                         </div>
                         <div class="kort">
                             <h4 class="subtitle"> Functionality: </h4>
-                            <p> We made a e-wallet where you can have your credit cards in. In the app, the user is supposed to be able to add as many cards as possible and then activate one of them. </p>
+                            <p> We developed an e-wallet where it is possible to have your credit cards in. In the application the user is supposed to be able to add as many cards as possible and then activate one of them. </p>
                         </div>
                         <div class="kort">
                             <h4 class="subtitle"> My Thoughts: </h4>

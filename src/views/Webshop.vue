@@ -23,19 +23,19 @@
                     <article>
                         <div class="kort">
                             <h4 class="subtitle"> Type: </h4>
-                            <p> This was a group project in school made with Vue.js. </p>
+                            <p> This was a group assignment in school made with Vue.js. </p>
                         </div>
                         <div class="kort">
                             <h4 class="subtitle"> Requirements: </h4>
-                            <p> The requirements was to build a Vue-app with TDD, test-driven development. We needed to work in a group of 3 to 5 people and our working method should be agile. </p>
+                            <p> The requirements were to develop a Vue-app with TDD, test-driven development. We were supposed to work in a group of 3 to 5 people and use an agile working method. </p>
                         </div>
                         <div class="kort">
                             <h4 class="subtitle"> Functionality: </h4>
-                            <p> We built a webshop where you can buy soccer shoes. In the app, the user is supposed to be able to see all the products, filter between products, see details of a product, add a product to the shopping cart, change quantity of a product and see the total price in your shopping cart. </p>
+                            <p> We developed a webshop where you can buy soccer shoes. In the application, the user was supposed to be able to see all the products available for sale, filter between products, see a detailed description of each product, add a product to the shopping cart, change quantity of a product and see the total price in there shopping cart. </p>
                         </div>
                         <div class="kort">
                             <h4 class="subtitle"> My Thoughts: </h4>
-                            <p> I thought it was kind of a hard project because you were supposed to test the functionality with jest before you create the app. It was a different mindset that we needed to work with, but it worked out in the end. </p>
+                            <p> I thought this was a challenging project because we were supposed to test the functionality with jest before we created the application. The project required a different mindset, but worked out well in the end. </p>
                         </div>
                     </article>
                 </div>
