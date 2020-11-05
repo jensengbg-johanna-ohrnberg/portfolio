@@ -35,7 +35,7 @@
                         </div>
                         <div class="kort">
                             <h4 class="subtitle"> My Thoughts: </h4>
-                            <p> I thought it was a fun project where I got to develope my skills in both Vue.js and Vuex. It was also challenging as we got an api that we were supposed to use in our application. It was my first time working with apis. Due to good team work we were able to fulfill the assignment. </p>
+                            <p> I thought it was a fun project where I got to develop my skills in both Vue.js and Vuex. It was also challenging as we got an api that we were supposed to use in our application. It was my first time working with apis. Due to good team work we were able to fulfill the assignment. </p>
                         </div>
                     </article>
                 </div>
