@@ -27,6 +27,10 @@ export default {
     background-color: rgb(214, 250, 255);
   }
   #nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
     width: 100%;
     position: fixed;
     top: 0;
