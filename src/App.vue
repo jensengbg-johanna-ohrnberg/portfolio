@@ -31,6 +31,7 @@ export default {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    height: 4rem;
     width: 100%;
     position: fixed;
     top: 0;
@@ -40,8 +41,6 @@ export default {
   }
 
   .menuitem {
-      margin-top: 4rem;
-      text-align: center;
       text-decoration: none;
       font-size: 26px;
       font-family: 'Source Code Pro', monospace;
