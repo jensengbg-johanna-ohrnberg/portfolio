@@ -1,179 +1,292 @@
 <template>
     <section>
-        <section class="hero is-info">
-            <div class="hero-body">
-                <div class="container">
-                    <img src="../img/webshop-products.png" alt="products">
-            <img src="../img/webshop-filter.png" alt="filter">
-            <img src="../img/webshop-details.png" alt="details">
-            <img src="../img/webshop-cart.png" alt="cart">
-                </div>
+        <section class="webshop">
+            <h1>Webshop</h1>
+            <p>This is one of my websites I made in school. Check out the images below or go see the actual code at <a href="https://github.com/jensengbg-johanna-ohrnberg/webshop-grp-tdd" target="_blank">Github</a>.</p>
+            <section class="image-container">
+                <img v-on:click="lightbox" id="myImg1" src="../img/webshop-products.png" alt="Products Page" style="width:100%;max-width:300px">
+                <img v-on:click="lightbox" id="myImg2" src="../img/webshop-filter.png" alt="Filter Products Page" style="width:100%;max-width:300px">
+                <img v-on:click="lightbox" id="myImg3" src="../img/webshop-details.png" alt="Product Detail Page" style="width:100%;max-width:300px">
+                <img v-on:click="lightbox" id="myImg4" src="../img/webshop-cart.png" alt="Cart Page" style="width:100%;max-width:300px">
+            </section>
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+                <!-- The Close Button -->
+                <span class="close">&times;</span>
+
+                <!-- Modal Content (The Image) -->
+                <img class="modal-content" id="img01">
+
+                <!-- Modal Caption (Image Text) -->
+                <div id="caption"></div>
             </div>
+            <section class="info">
+                <article>
+                    <h3>Type:</h3>
+                    <p>
+                        This was a group assignment in school made with Vue.js.
+                    </p>
+                </article>
+                <article>
+                    <h3>Requirements:</h3>
+                    <p>
+                        The requirements were to develop a Vue-app with TDD, test-driven development.
+                        We were supposed to work in a group of 3 to 5 people and use an agile working method.
+                    </p>
+                </article>
+                <article>
+                    <h3>Functionality:</h3>
+                    <p>
+                        We developed a webshop where you can buy soccer shoes.
+                        In the application, the user was supposed to be able to see all the products available for sale,
+                        filter between products, see a detailed description of each product,
+                        add a product to the shopping cart, change quantity of a product and see the total price in there shopping cart.
+                    </p>
+                </article>
+                <article>
+                    <h3>My Thoughts:</h3>
+                    <p>
+                        I thought this was a challenging project because we were supposed to test the functionality with jest before we created the application.
+                        The project required a different mindset, but worked out well in the end.
+                    </p>
+                </article>
+            </section>
         </section>
-        <section class="hero is-dark">
-            <div class="hero-body">
-                <div class="container">
-                    <h1 class="title">Welcome to Webshop</h1>
-                </div>
-            </div>
-        </section>
-        <section class="hero is-info">
-            <div class="hero-body">
-                <div class="container">
-                    <article>
-                        <div class="kort">
-                            <h4 class="subtitle"> Type: </h4>
-                            <p> This was a group assignment in school made with Vue.js. </p>
-                        </div>
-                        <div class="kort">
-                            <h4 class="subtitle"> Requirements: </h4>
-                            <p> The requirements were to develop a Vue-app with TDD, test-driven development. We were supposed to work in a group of 3 to 5 people and use an agile working method. </p>
-                        </div>
-                        <div class="kort">
-                            <h4 class="subtitle"> Functionality: </h4>
-                            <p> We developed a webshop where you can buy soccer shoes. In the application, the user was supposed to be able to see all the products available for sale, filter between products, see a detailed description of each product, add a product to the shopping cart, change quantity of a product and see the total price in there shopping cart. </p>
-                        </div>
-                        <div class="kort">
-                            <h4 class="subtitle"> My Thoughts: </h4>
-                            <p> I thought this was a challenging project because we were supposed to test the functionality with jest before we created the application. The project required a different mindset, but worked out well in the end. </p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
+        <Footer />
     </section>
-    <!--<section class="container">
-        <section class="images">
-            <img src="../img/webshop-products.png" alt="products">
-            <img src="../img/webshop-filter.png" alt="filter">
-            <img src="../img/webshop-details.png" alt="details">
-            <img src="../img/webshop-cart.png" alt="cart">
-        </section>
-        <h1 class="title">Welcome to Webshop</h1>
-        <section class="flex">
-            <section class="border">
-            <h4> Type: </h4>
-                <p> This was a group project in school made with Vue.js. </p>
-            </section>
-            <section class="border">
-            <h4> Requirements: </h4>
-                <p> The requirements was to build a Vue-app with TDD, test-driven development. We needed to work in a group of 3 to 5 people and our working method should be agile. </p>
-            </section>
-            <section class="border">
-            <h4> Functionality: </h4>
-                <p> We built a webshop where you can buy soccer shoes. In the app, the user is supposed to be able to see all the products, filter between products, see details of a product, add a product to the shopping cart, change quantity of a product and see the total price in you shopping cart. </p>
-            </section>
-            <section class="border">
-            <h4> My Thoughts: </h4>
-                <p> I thought it was kind of a hard project because you were supposed to test the functionality with jest before you create the app. It was a different mindset that we needed to work with, but it worked out in the end. </p>
-            </section>
-        </section>
-    </section>-->
 </template>
 
 <script>
+import Footer from "../components/Footer.vue";
+
 export default {
-    name: "Webshop"
-}
+  name: "Home",
+  components: {
+    Footer
+  },
+  methods: {
+      lightbox: function () {
+        var modal = document.getElementById("myModal");
+        var img1 = document.getElementById("myImg1");
+        var img2 = document.getElementById("myImg2");
+        var img3 = document.getElementById("myImg3");
+        var img4 = document.getElementById("myImg4");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img1.onclick = function() {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        img2.onclick = function() {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        img3.onclick = function() {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        img4.onclick = function() {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+      }
+  }
+};
 </script>
 
-<style scoped>
-    .container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
+<style>
+    .webshop>h1 {
+    text-align: center;
+    margin: 2rem;
+    font-family: 'Source Code Pro', monospace;
+    color: #000000;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.webshop>p {
+    text-align: center;
+    margin: 2rem;
+    font-family: 'Balsamiq Sans', cursive;
+    color: #000000;
+    font-size: 16px;
+}
+
+.webshop>p>a {
+    text-decoration: none;
+    font-family: 'Balsamiq Sans', cursive;
+    color: #000000;
+    font-size: 16px;
+}
+
+.webshop>p>a:hover {
+    text-decoration: underline;
+    color: #41abe0;
+}
+
+
+/* Style the Image Used to Trigger the Modal */
+
+.image-container {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#myImg1,
+#myImg2,
+#myImg3,
+#myImg4 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    height: 24rem;
+    margin: 0.12rem;
+}
+
+#myImg1:hover,
+#myImg2:hover,
+#myImg3:hover,
+#myImg4:hover {
+    opacity: 0.4;
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(214, 250, 255);
+}
+
+
+/* Modal Content (Image) */
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 20%;
+    max-width: 700px;
+}
+
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+    color: #000000;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+
+/* Add Animation - Zoom in the Modal */
+
+.modal-content,
+#caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
     }
-
-    img {
-        width: 10em;
-        margin: 1em;
+    to {
+        transform: scale(1)
     }
+}
 
-    article {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        flex-direction: row;
-        flex-wrap: wrap;
+
+/* The Close Button */
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #000000;
+    font-size: 52px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #41abe0;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.info {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.info>article {
+    width: 20rem;
+    height: 20rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 2rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.info>article>h3 {
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+    color: #000000;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.info>article>p {
+    text-align: start;
+    font-family: 'Balsamiq Sans', cursive;
+    color: #000000;
+    font-size: 14px;
+    line-height: 22px;
+    margin: 1rem;
+}
+
+
+/* 100% Image Width on Smaller Screens */
+
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
     }
-
-    .kort {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        flex-direction: column;
-        flex-wrap: wrap;
-        padding: 2em;
-        margin: 5em;
-        margin-top: 1em;
-        width: 20em;
-        border: 1px solid hsl(0, 0%, 21%);
-    }
-    /*@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
-
-    .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 1em;
-        padding: 1em;
-    }
-
-    .title, h4 {
-        font-family: 'Ranchers', cursive;
-        font-size: 30px;
-        color: rgba(81, 203, 238, 1);
-    }
-
-    .flex {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        padding: 1em;
-        margin: 1em;
-    }
-
-    .border {
-        border: 1px solid white;
-        margin: 1em;
-        padding: 1em;
-        width: 80%;
-    }
-
-    p {
-        font-family: 'Fira Sans', sans-serif;
-        font-size: 22px;
-        color: white;
-    }
-
-    img {
-        width: 8em;
-        padding: 1em;
-    }
-
-    .images {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-
-    @media only screen and (min-width: 800px) {
-        .img {
-            width: 10em;
-        }
-
-        .flex {
-            flex-direction: row;
-        }
-
-        .border {
-            width: 35%;
-        }
-    }*/
+}
 </style>

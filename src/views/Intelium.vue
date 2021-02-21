@@ -1,13 +1,16 @@
 <template>
     <section>
-        <section class="meetup">
-            <h1>Meet Up</h1>
-            <p>This is one of my websites I made in school. Check out the images below or go see the actual code at <a href="https://github.com/jensengbg-johanna-ohrnberg/meetup" target="_blank">Github</a> or see the published version at <a href="https://join-meetup.herokuapp.com/">join-meetup.herokuapp.com</a>.</p>
+        <section class="intelium">
+            <h1>Intelium Engineering AB</h1>
+            <p>This is one of my websites I made for my internship. Check out the images below or visit the actual website at <a href="http://www.intelium.se/" target="_blank">www.intelium.se</a>.</p>
             <section class="image-container">
-                <img v-on:click="lightbox" id="myImg1" src="../img/meetup-home.png" alt="Home Page" style="width:100%;max-width:300px">
-                <img v-on:click="lightbox" id="myImg2" src="../img/meetup-event.png" alt="Event Page" style="width:100%;max-width:300px">
-                <img v-on:click="lightbox" id="myImg3" src="../img/meetup-signup.png" alt="Sign Up Page" style="width:100%;max-width:300px">
-                <img v-on:click="lightbox" id="myImg4" src="../img/meetup-reviews.png" alt="Review Page" style="width:100%;max-width:300px">
+                <img v-on:click="lightbox" id="myImg1" src="../img/intelium_home_1.png" alt="Home Page" style="width:100%;max-width:300px">
+                <img v-on:click="lightbox" id="myImg2" src="../img/intelium_home_2.png" alt="Home Page Competence Area" style="width:100%;max-width:300px">
+                <img v-on:click="lightbox" id="myImg3" src="../img/intelium_about_1.png" alt="About Page" style="width:100%;max-width:300px">
+                <img v-on:click="lightbox" id="myImg4" src="../img/intelium_competences_2.png" alt="Competence Page Simulation Area" style="width:100%;max-width:300px">
+                <img v-on:click="lightbox" id="myImg5" src="../img/intelium_career_1.png" alt="Career Page" style="width:100%;max-width:300px">
+                <img v-on:click="lightbox" id="myImg6" src="../img/intelium_career_2.png" alt="Career Page Available Job Info" style="width:100%;max-width:300px">
+                <img v-on:click="lightbox" id="myImg7" src="../img/intelium_career_3.png" alt="Career Page Spontaneous Application Form" style="width:100%;max-width:300px">
             </section>
 
             <!-- The Modal -->
@@ -26,30 +29,30 @@
                 <article>
                     <h3>Type:</h3>
                     <p>
-                        This was a individual assignment in school made with Vue.js.
+                        A website made with HTML, CSS, JavaScript, PHP and MYSQL Databases.
                     </p>
                 </article>
                 <article>
                     <h3>Requirements:</h3>
                     <p>
-                        The requirements were to develop an application using Vue.js.
-                        The purpose of the project was to use Jest to test our application.
-                        We were also supposed to use Docker in order to publish our application in an optional cloud service.
+                        The requirements was to come up with different design ideas and then create the website individually with inputs from my colleauges.
                     </p>
                 </article>
                 <article>
                     <h3>Functionality:</h3>
                     <p>
-                        We developed an application where you can see upcoming meet ups as well as sign up for a specific meet up.
-                        The user was also supposed to be able to write a review after attending a meet up.
+                        The users can read about Intelium and the competences they have.
+                        They can then browse for available jobs and apply to different jobs.
+                        They can also send a spontaneous application if they don't find what they are looking for.
                     </p>
                 </article>
                 <article>
                     <h3>My Thoughts:</h3>
                     <p>
-                        I thought it was a fun project where I learned a lot.
-                        Not just about testing and publishing which were the requirements of the project,
-                        but I also developed my skills regarding CSS and design.
+                        This was a challenging but fun experience helping Intelium with their website.
+                        It was my first published website outside the classroom.
+                        I got to learn how to work with PHP and MySQL Databases which I never done before.
+                        It was challenging sometimes but with help from colleauges and the internet I managed to complete the website.
                     </p>
                 </article>
             </section>
@@ -73,6 +76,9 @@ export default {
         var img2 = document.getElementById("myImg2");
         var img3 = document.getElementById("myImg3");
         var img4 = document.getElementById("myImg4");
+        var img5 = document.getElementById("myImg5");
+        var img6 = document.getElementById("myImg6");
+        var img7 = document.getElementById("myImg7");
         var modalImg = document.getElementById("img01");
         var captionText = document.getElementById("caption");
         img1.onclick = function() {
@@ -95,6 +101,21 @@ export default {
             modalImg.src = this.src;
             captionText.innerHTML = this.alt;
         }
+        img5.onclick = function() {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        img6.onclick = function() {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        img7.onclick = function() {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
         var span = document.getElementsByClassName("close")[0];
         span.onclick = function() {
             modal.style.display = "none";
@@ -105,7 +126,7 @@ export default {
 </script>
 
 <style>
-    .meetup>h1 {
+    .intelium>h1 {
     text-align: center;
     margin: 2rem;
     font-family: 'Source Code Pro', monospace;
@@ -114,7 +135,7 @@ export default {
     font-size: 48px;
 }
 
-.meetup>p {
+.intelium>p {
     text-align: center;
     margin: 2rem;
     font-family: 'Balsamiq Sans', cursive;
@@ -122,14 +143,14 @@ export default {
     font-size: 16px;
 }
 
-.meetup>p>a {
+.intelium>p>a {
     text-decoration: none;
     font-family: 'Balsamiq Sans', cursive;
     color: #000000;
     font-size: 16px;
 }
 
-.meetup>p>a:hover {
+.intelium>p>a:hover {
     text-decoration: underline;
     color: #41abe0;
 }
@@ -142,7 +163,7 @@ export default {
     margin: auto;
     margin-bottom: 2rem;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
@@ -151,18 +172,24 @@ export default {
 #myImg1,
 #myImg2,
 #myImg3,
-#myImg4 {
+#myImg4,
+#myImg5,
+#myImg6,
+#myImg7 {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
-    height: 24rem;
+    height: 10rem;
     margin: 0.12rem;
 }
 
 #myImg1:hover,
 #myImg2:hover,
 #myImg3:hover,
-#myImg4:hover {
+#myImg4:hover,
+#myImg5:hover,
+#myImg6:hover,
+#myImg7:hover {
     opacity: 0.4;
 }
 
@@ -188,7 +215,7 @@ export default {
 .modal-content {
     margin: auto;
     display: block;
-    width: 20%;
+    width: 80%;
     max-width: 700px;
 }
 

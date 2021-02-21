@@ -7,16 +7,16 @@
             </p>
             <section class="card-container">
                 <article class="card">
-                    <img src="img/intelium_home_1.png" alt="My Work">
-                    <a href="work.html"><button>See My Work</button></a>
+                    <img src="../img/intelium_home_1.png" alt="My Work">
+                    <router-link class="button" to="/mywork">See my Work</router-link>
                 </article>
                 <article class="card">
-                    <img src="img/cv.png" alt="My Resume">
-                    <a href="resume.html"><button>Check Out My Resume</button></a>
+                    <img src="../img/cv.png" alt="My Resume">
+                    <router-link class="button" to="/resume">Check out my Resume</router-link>
                 </article>
                 <article class="card">
-                    <img src="img/me.png" alt="Contact Me">
-                    <a href="contact.html"><button>Contact me</button></a>
+                    <img src="../img/me.png" alt="Contact Me">
+                    <router-link class="button" to="/contact">Contact Me</router-link>
                 </article>
             </section>
         </section>
@@ -59,22 +59,19 @@
                 </ul>
             </section>
         </section>
-      <!--<WhoAmI />
-      <Skills />-->
+      <Footer />
   </section>
 </template>
 
 <script>
-/*import WhoAmI from "../components/WhoAmI.vue"
-import Skills from "../components/Skills.vue"
+import Footer from "../components/Footer.vue"
 
 export default {
   name: "Home",
   components: {
-    WhoAmI,
-    Skills
+    Footer
   }
-};*/
+};
 </script>
 
 <style>
@@ -123,7 +120,7 @@ export default {
     height: 80%;
 }
 
-.card button {
+.card .button {
     border: none;
     outline: 0;
     padding: 1rem;
@@ -136,7 +133,7 @@ export default {
     font-family: 'Balsamiq Sans', cursive;
 }
 
-.card button:hover {
+.card .button:hover {
     opacity: 0.7;
 }
 
