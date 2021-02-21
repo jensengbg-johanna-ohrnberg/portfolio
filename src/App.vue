@@ -2,7 +2,7 @@
   <div id="app">
     <nav id="nav" class="navbar is-black" role="navigation" aria-label="dropdown navigation">
       <router-link class="navbar-item" to="/">Home</router-link>
-      <router-link class="navbar-item" to="/mywork">My Work</router-link>
+      <router-link class="navbar-item" to="/mywork">My bay</router-link>
       <router-link class="navbar-item" to="/about">About Me</router-link>
       <router-link class="navbar-item" to="/contact">Contact</router-link>
     </nav>
