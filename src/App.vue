@@ -42,9 +42,6 @@ export default {
       margin: 0;
       padding: 0;
   }
-  #app {
-    background-color: rgb(214, 250, 255);
-  }
   #nav {
     display: flex;
     flex-direction: row;
@@ -79,6 +76,7 @@ export default {
     width: 100%;
     padding: 2rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: rgb(214, 250, 255);
 }
 
 .footer>section {
