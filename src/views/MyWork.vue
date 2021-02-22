@@ -6,7 +6,7 @@
                 <article>
                     <img src="../img/intelium_home_1.png" alt="Intelium Engineering AB">
                     <h2>Intelium Engineering AB</h2>
-                    <router-link class="button" to="/intelium">Read More...</router-link>
+                    <button v-on:click="goToIntelium">Read More...</button>
                 </article>
                 <article>
                     <h2>Coming Soon...</h2>
@@ -21,25 +21,25 @@
                     <img class="airbean" src="../img/airbean-login.png" alt="AirBean">
                     <h2>AirBean</h2>
                     <!--<h4>Group Assignment in School</h4>-->
-                    <router-link class="button" to="/airbean">Read More...</router-link>
+                    <button v-on:click="goToAirbean">Read More...</button>
                 </article>
                 <article>
                     <img src="../img/e-wallet-cards.png" alt="E-Wallet">
                     <h2>E-Wallet</h2>
                     <!--<h4>Individual Assignment in School</h4>-->
-                    <router-link class="button" to="/ewallet">Read More...</router-link>
+                    <button v-on:click="goToEwallet">Read More...</button>
                 </article>
                 <article>
                     <img src="../img/webshop-products.png" alt="WebShop">
                     <h2>Web Shop</h2>
                     <!--<h4>Group Assignment in School</h4>-->
-                    <router-link class="button" to="/webshop">Read More...</router-link>
+                    <button v-on:click="goToWebshop">Read More...</button>
                 </article>
                 <article>
                     <img src="../img/meetup-home.png" alt="Meet Up">
                     <h2>Meet Up</h2>
                     <!--<h4>Individual Assignment in School</h4>-->
-                    <router-link class="button" to="/meetup">Read More...</router-link>
+                    <button v-on:click="goToMeetup">Read More...</button>
                 </article>
             </section>
         </section>
@@ -54,6 +54,23 @@ export default {
   name: "Home",
   components: {
     Footer
+  },
+  methods: {
+      goToIntelium: function () {
+          this.$router.push({ path: 'intelium' });
+      },
+      goToAirbean: function () {
+          this.$router.push({ path: 'airbean' });
+      },
+      goToEwallet: function () {
+          this.$router.push({ path: 'ewallet' });
+      },
+      goToWebshop: function () {
+          this.$router.push({ path: 'webshop' });
+      },
+      goToMeetup: function () {
+          this.$router.push({ path: 'meetup' });
+      }
   }
 };
 </script>
@@ -117,8 +134,8 @@ export default {
     font-size: 18px;
 }
 
-.internship>article>.button,
-.school>article>.button {
+.internship>article>button,
+.school>article>button {
     border: none;
     outline: 0;
     color: white;
@@ -131,8 +148,8 @@ export default {
     font-family: 'Balsamiq Sans', cursive;
 }
 
-.internship>article>.button:hover,
-.school>article>.button:hover {
+.internship>article>button:hover,
+.school>article>button:hover {
     opacity: 0.7;
 }
 </style>

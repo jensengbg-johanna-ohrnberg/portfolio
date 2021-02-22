@@ -16,7 +16,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style>
   @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Source+Code+Pro&display=swap');
   * {
       box-sizing: border-box;

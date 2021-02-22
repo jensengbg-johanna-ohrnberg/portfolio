@@ -143,7 +143,7 @@ export default {
     margin: auto;
     margin-bottom: 2rem;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
@@ -156,7 +156,7 @@ export default {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
-    height: 20rem;
+    height: 10rem;
     margin: 0.12rem;
 }
 
@@ -189,8 +189,7 @@ export default {
 .modal-content {
     margin: auto;
     display: block;
-    width: 20%;
-    max-width: 700px;
+    width: 20rem;
 }
 
 
