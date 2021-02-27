@@ -2,7 +2,7 @@
     <section>
         <section class="contact">
             <h1>Contact Me</h1>
-            <p><span>Email: </span>j-ohrnberg@live.se</p>
+            <a href="mailto:j-ohrnberg@live.se"><span>Email: </span>j-ohrnberg@live.se</a>
             <p><span>Phone Number: </span>0703 - 73 43 20</p>
             <h4>Visit Me at:</h4>
             <a href="https://www.linkedin.com/in/johanna-%C3%B6hrnberg-7a6b17196/">Linkedin</a>
@@ -42,6 +42,20 @@ export default {
         font-size: 48px;
     }
 
+    .contact>a {
+        text-align: center;
+        font-family: 'Balsamiq Sans', cursive;
+        color: #000000;
+        font-weight: normal;
+        font-size: 18px;
+        text-decoration: none;
+        margin: 0.5rem;
+    }
+
+    .contact>a>span {
+        font-weight: bold;
+    }
+
     .contact>p {
         text-align: center;
         font-family: 'Balsamiq Sans', cursive;
@@ -61,21 +75,6 @@ export default {
         font-weight: bold;
         font-size: 24px;
         margin-bottom: 0.5rem;
-    }
-
-    .contact>a {
-        text-align: center;
-        font-family: 'Balsamiq Sans', cursive;
-        color: #000000;
-        font-weight: normal;
-        font-size: 18px;
-        text-decoration: none;
-        margin: 0.5rem;
-    }
-
-    .contact>a:hover {
-        text-decoration: underline;
-        color: #41abe0;
     }
 
     .contact>img {

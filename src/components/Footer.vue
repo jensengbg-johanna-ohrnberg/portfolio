@@ -9,16 +9,32 @@
             </section>
             <section>
                 <h5>Fast Links</h5>
-                <a href="work.html">My Work</a>
-                <a href="resume.html">My Resume</a>
-                <a href="contact.html">Contact</a>
+                <a v-on:click="goToMyWork">My Work</a>
+                <a v-on:click="goToResume">My Resume</a>
+                <a v-on:click="goToContact">Contact</a>
             </section>
             <section>
                 <h5>Contact</h5>
-                <a href="">j-ohrnberg@live.se</a>
+                <a href="mailto:j-ohrnberg@live.se">j-ohrnberg@live.se</a>
             </section>
         </section>
 </template>
+
+<script>
+export default {
+    methods: {
+        goToMyWork: function () {
+            this.$router.push({ path: 'mywork' });
+        },
+        goToResume: function () {
+            this.$router.push({ path: 'resume' });
+        },
+        goToContact: function () {
+            this.$router.push({ path: 'contact' });
+        }
+    }
+}
+</script>
 
 <style scoped>
     .footer {
@@ -52,6 +68,12 @@
     padding-bottom: 0.2rem;
     text-decoration: none;
     font-size: 12px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer>section>a:hover {
+    color: #41abe0;
 }
 
 .footer>section>section {
