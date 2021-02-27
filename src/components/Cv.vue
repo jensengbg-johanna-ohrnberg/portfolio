@@ -14,7 +14,6 @@
             <p>j-ohrnberg@live.se</p>
             <h4>Websites</h4>
             <a href="https://www.linkedin.com/in/johanna-%C3%B6hrnberg-7a6b17196/" target="_blank">Linkedin</a>
-            <a href="" target="_blank">Portfolio</a>
             <a href="https://github.com/jensengbg-johanna-ohrnberg" target="_blank">Github</a>
             <h4>Interests</h4>
             <ul>
@@ -89,7 +88,6 @@
         margin-top: 2rem;
         margin-bottom: 2rem;
         width: 80%;
-        /*border: 1px solid black;*/
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         border-top-left-radius: 100px 100px;
         border-bottom-right-radius: 100px 100px;
@@ -147,13 +145,12 @@
         color: #000000;
         font-weight: normal;
         font-size: 12px;
-        text-decoration: none;
+        text-decoration: underline;
         line-height: 20px;
     }
 
     .left>a:hover {
         color: #41abe0;
-        text-decoration: underline;
     }
 
     .left>ul>li,

@@ -2,291 +2,57 @@
     <section>
         <section class="meetup">
             <h1>Meet Up</h1>
-            <p>This is one of my websites I made in school. Check out the images below or go see the actual code at <a href="https://github.com/jensengbg-johanna-ohrnberg/meetup" target="_blank">Github</a> or see the published version at <a href="https://join-meetup.herokuapp.com/">join-meetup.herokuapp.com</a>.</p>
-            <section class="image-container">
-                <img v-on:click="lightbox" id="myImg1" src="../img/meetup-home.png" alt="Home Page" style="width:100%;max-width:300px">
-                <img v-on:click="lightbox" id="myImg2" src="../img/meetup-event.png" alt="Event Page" style="width:100%;max-width:300px">
-                <img v-on:click="lightbox" id="myImg3" src="../img/meetup-signup.png" alt="Sign Up Page" style="width:100%;max-width:300px">
-                <img v-on:click="lightbox" id="myImg4" src="../img/meetup-reviews.png" alt="Review Page" style="width:100%;max-width:300px">
-            </section>
-
-            <!-- The Modal -->
-            <div id="myModal" class="modal">
-
-                <!-- The Close Button -->
-                <span class="close">&times;</span>
-
-                <!-- Modal Content (The Image) -->
-                <img class="modal-content" id="img01">
-
-                <!-- Modal Caption (Image Text) -->
-                <div id="caption"></div>
-            </div>
-            <section class="info">
-                <article>
-                    <h3>Type:</h3>
-                    <p>
-                        This was a individual assignment in school made with Vue.js.
-                    </p>
-                </article>
-                <article>
-                    <h3>Requirements:</h3>
-                    <p>
-                        The requirements were to develop an application using Vue.js.
-                        The purpose of the project was to use Jest to test our application.
-                        We were also supposed to use Docker in order to publish our application in an optional cloud service.
-                    </p>
-                </article>
-                <article>
-                    <h3>Functionality:</h3>
-                    <p>
-                        We developed an application where you can see upcoming meet ups as well as sign up for a specific meet up.
-                        The user was also supposed to be able to write a review after attending a meet up.
-                    </p>
-                </article>
-                <article>
-                    <h3>My Thoughts:</h3>
-                    <p>
-                        I thought it was a fun project where I learned a lot.
-                        Not just about testing and publishing which were the requirements of the project,
-                        but I also developed my skills regarding CSS and design.
-                    </p>
-                </article>
-            </section>
+            <p>This is one of my websites I made in school. Check out the images below or go see the actual code at <a href="https://github.com/jensengbg-johanna-ohrnberg/meetup" target="_blank">Github</a> or see the published version at <a href="https://join-meetup.herokuapp.com/" target="_blank">join-meetup.herokuapp.com</a>.</p>
         </section>
+        <MeetUpImages />
+        <MeetUpContent />
         <Footer />
     </section>
 </template>
 
 <script>
 import Footer from "../components/Footer.vue";
+import MeetUpContent from "../components/MeetUpContent.vue";
+import MeetUpImages from "../components/MeetUpImages.vue";
 
 export default {
   name: "Home",
   components: {
-    Footer
-  },
-  methods: {
-      lightbox: function () {
-        var modal = document.getElementById("myModal");
-        var img1 = document.getElementById("myImg1");
-        var img2 = document.getElementById("myImg2");
-        var img3 = document.getElementById("myImg3");
-        var img4 = document.getElementById("myImg4");
-        var modalImg = document.getElementById("img01");
-        var captionText = document.getElementById("caption");
-        img1.onclick = function() {
-            modal.style.display = "block";
-            modalImg.src = this.src;
-            captionText.innerHTML = this.alt;
-        }
-        img2.onclick = function() {
-            modal.style.display = "block";
-            modalImg.src = this.src;
-            captionText.innerHTML = this.alt;
-        }
-        img3.onclick = function() {
-            modal.style.display = "block";
-            modalImg.src = this.src;
-            captionText.innerHTML = this.alt;
-        }
-        img4.onclick = function() {
-            modal.style.display = "block";
-            modalImg.src = this.src;
-            captionText.innerHTML = this.alt;
-        }
-        var span = document.getElementsByClassName("close")[0];
-        span.onclick = function() {
-            modal.style.display = "none";
-        }
-      }
+    Footer,
+    MeetUpContent,
+    MeetUpImages
   }
 };
 </script>
 
 <style>
+    .meetup {
+        text-align: center;
+    }
+
     .meetup>h1 {
-    text-align: center;
-    margin: 2rem;
-    font-family: 'Source Code Pro', monospace;
-    color: #000000;
-    font-weight: bold;
-    font-size: 48px;
-}
-
-.meetup>p {
-    text-align: center;
-    margin: 2rem;
-    font-family: 'Balsamiq Sans', cursive;
-    color: #000000;
-    font-size: 16px;
-}
-
-.meetup>p>a {
-    text-decoration: none;
-    font-family: 'Balsamiq Sans', cursive;
-    color: #000000;
-    font-size: 16px;
-}
-
-.meetup>p>a:hover {
-    text-decoration: underline;
-    color: #41abe0;
-}
-
-
-/* Style the Image Used to Trigger the Modal */
-
-.image-container {
-    width: 80%;
-    margin: auto;
-    margin-bottom: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-#myImg1,
-#myImg2,
-#myImg3,
-#myImg4 {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-    height: 24rem;
-    margin: 0.12rem;
-}
-
-#myImg1:hover,
-#myImg2:hover,
-#myImg3:hover,
-#myImg4:hover {
-    opacity: 0.4;
-}
-
-
-/* The Modal (background) */
-
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 100px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(214, 250, 255);
-}
-
-
-/* Modal Content (Image) */
-
-.modal-content {
-    margin: auto;
-    display: block;
-    width: 20%;
-    max-width: 700px;
-}
-
-
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
-
-#caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    font-family: 'Source Code Pro', monospace;
-    color: #000000;
-    font-weight: bold;
-    padding: 10px 0;
-}
-
-
-/* Add Animation - Zoom in the Modal */
-
-.modal-content,
-#caption {
-    animation-name: zoom;
-    animation-duration: 0.6s;
-}
-
-@keyframes zoom {
-    from {
-        transform: scale(0)
+        margin: 2rem;
+        font-family: 'Source Code Pro', monospace;
+        color: #000000;
+        font-weight: bold;
+        font-size: 48px;
     }
-    to {
-        transform: scale(1)
+
+    .meetup>p {
+        margin: auto;
+        font-family: 'Balsamiq Sans', cursive;
+        color: #000000;
+        font-size: 16px;
     }
-}
 
-
-/* The Close Button */
-
-.close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #000000;
-    font-size: 52px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-    color: #41abe0;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.info {
-    width: 80%;
-    margin: auto;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.info>article {
-    width: 20rem;
-    height: 20rem;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin: 2rem;
-    padding: 1rem;
-    text-align: center;
-}
-
-.info>article>h3 {
-    text-align: center;
-    font-family: 'Source Code Pro', monospace;
-    color: #000000;
-    font-weight: bold;
-    font-size: 24px;
-}
-
-.info>article>p {
-    text-align: start;
-    font-family: 'Balsamiq Sans', cursive;
-    color: #000000;
-    font-size: 14px;
-    line-height: 22px;
-    margin: 1rem;
-}
-
-
-/* 100% Image Width on Smaller Screens */
-
-@media only screen and (max-width: 700px) {
-    .modal-content {
-        width: 100%;
+    .meetup>p>a {
+        text-decoration: underline;
+        font-family: 'Balsamiq Sans', cursive;
+        color: #000000;
+        font-size: 16px;
     }
-}
+
+    .meetup>p>a:hover {
+        color: #41abe0;
+    }
 </style>

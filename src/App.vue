@@ -50,9 +50,4 @@ export default {
   .menuitem:hover {
       color: #00CCFF;
   }
-  /*#nav {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  }*/
 </style>

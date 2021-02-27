@@ -1,17 +1,17 @@
 <template>
-    <section class="images">
-        <img v-on:click="modal" id="myImg1" src="../img/intelium_home_1.png" alt="Home Page" style="width:100%;max-width:300px">
-        <img v-on:click="modal" id="myImg2" src="../img/intelium_home_2.png" alt="Home Page" style="width:100%;max-width:300px">
-        <img v-on:click="modal" id="myImg3" src="../img/intelium_about_1.png" alt="About Page" style="width:100%;max-width:300px">
-        <img v-on:click="modal" id="myImg4" src="../img/intelium_competences_1.png" alt="Competences Page" style="width:100%;max-width:300px">
-        <img v-on:click="modal" id="myImg5" src="../img/intelium_career_1.png" alt="Career Page" style="width:100%;max-width:300px">
-        <img v-on:click="modal" id="myImg6" src="../img/intelium_career_2.png" alt="Career Page" style="width:100%;max-width:300px">
-        <img v-on:click="modal" id="myImg7" src="../img/intelium_career_3.png" alt="Career Page" style="width:100%;max-width:300px">
+    <section class="intimages">
+        <img v-on:click="intmodal" id="intImg1" src="../img/intelium_home_1.png" alt="Home Page" style="width:100%;max-width:300px">
+        <img v-on:click="intmodal" id="intImg2" src="../img/intelium_home_2.png" alt="Home Page" style="width:100%;max-width:300px">
+        <img v-on:click="intmodal" id="intImg3" src="../img/intelium_about_1.png" alt="About Page" style="width:100%;max-width:300px">
+        <img v-on:click="intmodal" id="intImg4" src="../img/intelium_competences_1.png" alt="Competences Page" style="width:100%;max-width:300px">
+        <img v-on:click="intmodal" id="intImg5" src="../img/intelium_career_1.png" alt="Career Page" style="width:100%;max-width:300px">
+        <img v-on:click="intmodal" id="intImg6" src="../img/intelium_career_2.png" alt="Career Page" style="width:100%;max-width:300px">
+        <img v-on:click="intmodal" id="intImg7" src="../img/intelium_career_3.png" alt="Career Page" style="width:100%;max-width:300px">
 
-        <div id="myModal" class="modal">
-            <span class="close">&times;</span>
-            <img class="modal-content" id="img01">
-            <div id="caption"></div>
+        <div id="intModal" class="intmodal">
+            <span class="intclose">&times;</span>
+            <img class="int-modal-content" id="intimg01">
+            <div id="intcaption"></div>
         </div>
     </section>
 </template>
@@ -20,51 +20,57 @@
 
 export default {
     methods: {
-        modal: function () {
-            var modal = document.getElementById("myModal");
-            var img2 = document.getElementById("myImg2");
-            var img3 = document.getElementById("myImg3");
-            var img4 = document.getElementById("myImg4");
-            var img5 = document.getElementById("myImg5");
-            var img6 = document.getElementById("myImg6");
-            var img7 = document.getElementById("myImg7");
-            var modalImg = document.getElementById("img01");
-            var captionText = document.getElementById("caption");
-            img2.onclick = function(){
-                modal.style.display = "block";
-                modalImg.src = this.src;
-                captionText.innerHTML = this.alt;
+        intmodal: function () {
+            var intmodal = document.getElementById("intModal");
+            var intimg1 = document.getElementById("intImg1");
+            var intimg2 = document.getElementById("intImg2");
+            var intimg3 = document.getElementById("intImg3");
+            var intimg4 = document.getElementById("intImg4");
+            var intimg5 = document.getElementById("intImg5");
+            var intimg6 = document.getElementById("intImg6");
+            var intimg7 = document.getElementById("intImg7");
+            var intmodalImg = document.getElementById("intimg01");
+            var intcaptionText = document.getElementById("intcaption");
+            intimg1.onclick = function(){
+                intmodal.style.display = "block";
+                intmodalImg.src = this.src;
+                intcaptionText.innerHTML = this.alt;
             }
-            img3.onclick = function(){
-                modal.style.display = "block";
-                modalImg.src = this.src;
-                captionText.innerHTML = this.alt;
+            intimg2.onclick = function(){
+                intmodal.style.display = "block";
+                intmodalImg.src = this.src;
+                intcaptionText.innerHTML = this.alt;
             }
-            img4.onclick = function(){
-                modal.style.display = "block";
-                modalImg.src = this.src;
-                captionText.innerHTML = this.alt;
+            intimg3.onclick = function(){
+                intmodal.style.display = "block";
+                intmodalImg.src = this.src;
+                intcaptionText.innerHTML = this.alt;
             }
-            img5.onclick = function(){
-                modal.style.display = "block";
-                modalImg.src = this.src;
-                captionText.innerHTML = this.alt;
+            intimg4.onclick = function(){
+                intmodal.style.display = "block";
+                intmodalImg.src = this.src;
+                intcaptionText.innerHTML = this.alt;
             }
-            img6.onclick = function(){
-                modal.style.display = "block";
-                modalImg.src = this.src;
-                captionText.innerHTML = this.alt;
+            intimg5.onclick = function(){
+                intmodal.style.display = "block";
+                intmodalImg.src = this.src;
+                intcaptionText.innerHTML = this.alt;
             }
-            img7.onclick = function(){
-                modal.style.display = "block";
-                modalImg.src = this.src;
-                captionText.innerHTML = this.alt;
+            intimg6.onclick = function(){
+                intmodal.style.display = "block";
+                intmodalImg.src = this.src;
+                intcaptionText.innerHTML = this.alt;
+            }
+            intimg7.onclick = function(){
+                intmodal.style.display = "block";
+                intmodalImg.src = this.src;
+                intcaptionText.innerHTML = this.alt;
             }
 
-            var span = document.getElementsByClassName("close")[0];
+            var intspan = document.getElementsByClassName("intclose")[0];
 
-            span.onclick = function() {
-                modal.style.display = "none";
+            intspan.onclick = function() {
+                intmodal.style.display = "none";
             }
         }
     }
@@ -72,7 +78,7 @@ export default {
 </script>
 
 <style>
-    .images {
+    .intimages {
         width: 80%;
         display: flex;
         justify-content: flex-start;
@@ -84,31 +90,31 @@ export default {
         margin-bottom: 2rem;
     }
 
-    #myImg1,
-    #myImg2,
-    #myImg3,
-    #myImg4,
-    #myImg5,
-    #myImg6,
-    #myImg7 {
+    #intImg1,
+    #intImg2,
+    #intImg3,
+    #intImg4,
+    #intImg5,
+    #intImg6,
+    #intImg7 {
         border-radius: 5px;
         cursor: pointer;
         transition: 0.3s;
-        height: 8rem;
+        height: 10rem;
         margin: 0.1rem;
     }
 
-    #myImg1:hover,
-    #myImg2:hover,
-    #myImg3:hover,
-    #myImg4:hover,
-    #myImg5:hover,
-    #myImg6:hover,
-    #myImg7:hover {
+    #intImg1:hover,
+    #intImg2:hover,
+    #intImg3:hover,
+    #intImg4:hover,
+    #intImg5:hover,
+    #intImg6:hover,
+    #intImg7:hover {
         opacity: 0.7;
     }
 
-    .modal {
+    .intmodal {
         display: none;
         position: fixed;
         z-index: 1;
@@ -119,28 +125,30 @@ export default {
         height: 100%;
         overflow: auto;
         background-color: rgb(0,0,0);
-        background-color: rgba(0,0,0,0.9);
+        background-color: rgba(0,0,0,0.8);
     }
 
-    .modal-content {
+    .int-modal-content {
         margin: auto;
         display: block;
         width: 80%;
         max-width: 700px;
     }
 
-    #caption {
+    #intcaption {
         margin: auto;
         display: block;
         width: 80%;
         max-width: 700px;
         text-align: center;
         color: #ccc;
+        font-weight: bold;
+        font-family: 'Balsamiq Sans', cursive;
         padding: 10px 0;
         height: 150px;
     }
 
-    .modal-content, #caption {
+    .int-modal-content, #intcaption {
         animation-name: zoom;
         animation-duration: 0.6s;
     }
@@ -150,7 +158,7 @@ export default {
         to {transform: scale(1);}
     }
 
-    .close {
+    .intclose {
         position: absolute;
         top: 15px;
         right: 35px;
@@ -160,15 +168,15 @@ export default {
         transition: 0.3s;
     }
 
-    .close:hover,
-    .close:focus {
+    .intclose:hover,
+    .intclose:focus {
         color: #bbb;
         text-decoration: none;
         cursor: pointer;
     }
 
     @media only screen and (max-width: 700px) {
-        .modal-content {
+        .int-modal-content {
             width: 100%;
         }
     }

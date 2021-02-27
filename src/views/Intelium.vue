@@ -44,14 +44,13 @@ export default {
     }
 
     .intelium>p>a {
-        text-decoration: none;
+        text-decoration: underline;
         font-family: 'Balsamiq Sans', cursive;
         color: #000000;
         font-size: 16px;
     }
 
     .intelium>p>a:hover {
-        text-decoration: underline;
         color: #41abe0;
     }
 </style>
