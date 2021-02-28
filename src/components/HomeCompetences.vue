@@ -91,4 +91,25 @@
         font-size: 14px;
         font-weight: normal;
     }
+
+    @media only screen and (max-width: 520px) {
+        .compentences {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        .first {
+            grid-column: 1 / 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .second {
+            grid-column: 1 / 3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
 </style>

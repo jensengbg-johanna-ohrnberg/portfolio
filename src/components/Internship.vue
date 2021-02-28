@@ -72,4 +72,14 @@ export default {
     .internship>article>button:hover {
         opacity: 0.7;
     }
+
+    @media only screen and (max-width: 380px) {
+        .internship>article {
+            height: 15rem;
+        }
+
+        .internship>article>h2 {
+            font-size: 14px;
+        }
+    }
 </style>

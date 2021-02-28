@@ -55,4 +55,16 @@ export default {
     .airbean>p>a:hover {
         color: #41abe0;
     }
+
+    @media only screen and (max-width: 400px) {
+        .airbean>h1 {
+            font-size: 32px;
+        }
+    }
+
+    @media only screen and (max-width: 290px) {
+        .airbean>h1 {
+            font-size: 24px;
+        }
+    }
 </style>

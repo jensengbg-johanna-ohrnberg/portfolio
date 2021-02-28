@@ -90,4 +90,14 @@ export default {
     .school>article>button:hover {
         opacity: 0.7;
     }
+
+    @media only screen and (max-width: 380px) {
+        .school>article {
+            height: 15rem;
+        }
+
+        .school>article>h2 {
+            font-size: 14px;
+        }
+    }
 </style>

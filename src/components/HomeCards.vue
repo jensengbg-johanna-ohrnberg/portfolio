@@ -66,4 +66,21 @@ export default {
     .card button:hover {
         opacity: 0.7;
     }
+
+    @media only screen and (max-width: 570px) {
+        .card {
+            width: 15rem;
+            height: 15rem;
+        }
+    }
+    @media only screen and (max-width: 350px) {
+        .card {
+            width: 10rem;
+            height: 10rem;
+        }
+
+        .card button {
+            font-size: 14px;
+        }
+    }
 </style>

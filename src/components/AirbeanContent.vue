@@ -69,4 +69,11 @@
         padding: 1rem;
         width: 100%;
     }
+
+    @media only screen and (max-width: 430px) {
+        .info>article {
+            width: 100%;
+            height: 100%;
+        }
+    }
 </style>

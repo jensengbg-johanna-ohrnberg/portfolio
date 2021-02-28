@@ -37,7 +37,7 @@
         width: 80%;
         margin: auto;
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
         flex-direction: row;
         flex-wrap: wrap;
@@ -47,7 +47,7 @@
         width: 20rem;
         height: 20rem;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        margin: 2rem;
+        margin: 1rem;
         padding: 1rem;
         text-align: center;
     }
@@ -67,5 +67,14 @@
         font-size: 14px;
         padding: 1rem;
         width: 100%;
+    }
+
+
+
+    @media only screen and (max-width: 430px) {
+        .info>article {
+            width: 100%;
+            height: 100%;
+        }
     }
 </style>

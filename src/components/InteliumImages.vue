@@ -81,7 +81,7 @@ export default {
     .intimages {
         width: 80%;
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
         flex-direction: row;
         flex-wrap: wrap;

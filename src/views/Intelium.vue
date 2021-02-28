@@ -53,4 +53,16 @@ export default {
     .intelium>p>a:hover {
         color: #41abe0;
     }
+
+    @media only screen and (max-width: 400px) {
+        .intelium>h1 {
+            font-size: 32px;
+        }
+    }
+
+    @media only screen and (max-width: 290px) {
+        .intelium>h1 {
+            font-size: 24px;
+        }
+    }
 </style>
