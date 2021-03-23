@@ -15,15 +15,15 @@
             <h4>Websites</h4>
             <a href="https://www.linkedin.com/in/johanna-%C3%B6hrnberg-7a6b17196/" target="_blank">Linkedin</a>
             <a href="https://github.com/jensengbg-johanna-ohrnberg" target="_blank">Github</a>
-            <h4>Interests</h4>
-            <ul>
-                <li>Soccer</li>
-                <li>Ice Hockey</li>
-                <li>Design</li>
-                <li>Games</li>
-                <li>The Ocean</li>
-                <li>Dogs</li>
-            </ul>
+            <h4>Languages</h4>
+            <p>Swedish - Native</p>
+            <p>English - Fluent</p>
+            <h4>Other Qualifications</h4>
+            <p>1. Played college soccer in the USA where I got a "Honorable Mention" award for my achievement.</p>
+            <p>2. Play soccer in Göteborg FF.</p>
+            <p>3. Play ice hockey in Hovås HC.</p>
+            <h4>References</h4>
+            <p>Provided on request.</p>
         </section>
         <section class="right">
             <h1>Johanna Öhrnberg</h1>
@@ -31,42 +31,45 @@
             <h3>Education</h3>
             <h6>Jensen Yrkeshögskola</h6>
             <p>August 2019 - June 2021</p>
-            <p>Studying to become a Front-End Developer.
-                An education with courses such as JavaScript Programming, Web Communication,
-                Web Framework for JavaScript, Agile Project Methodology, Interaction Design and Front-End UX/UI.
+            <p>An education with a focus on web development.
+                Fun and challenging education.
+                Got to learn many new languages and frameworks.
+                The education ended with an educative internship.
+            </p>
+            <h6>University of Gothenburg</h6>
+            <p>August 2017 - October 2018</p>
+            <p>An education with a focus on the ocean.
+                A mix between biology, geology, chemistry and oceanography.
+                Developed my ability to work together as a team and learned to plan my time well.
             </p>
             <h6>Averett University</h6>
             <p>August 2013 - May 2017</p>
-            <p>An education in the USA where I studied Environmental Studies and Physical Education.
-                I played soccer in the schools team where I recieved an "Honorable Mention" award for my achievement.
-            </p>
+            <p>An exciting education where I developed my communication skills and my English language skills.</p>
             <h3>Work Experience</h3>
             <h6>Intelium Engineering AB - Front-End Developer</h6>
             <p>November 2020 - now</p>
-            <p>This is an internship that I am doing as my last part before graduation.
-                Here I get to create websites for three companies from scratch.
-                I use Figma to create the design. For creating the actual website I use HTML, CSS, JavaScript, PHP and MySQL Database.
-                On the websites the users can read about the companies and then look and apply for available jobs.
+            <p>This is an internship that is the last part of my education.
+                Here I have created a website and I am doing at least one more for their company.
+                Techniques used are HTML, CSS, JavaScript, PHP and MySQL.
+                Challenging and educational.
             </p>
             <h6>Lekia - Shop Assistant</h6>
             <p>November 2018 - now</p>
-            <p>The main tasks are to charge customers and recieve goods from suppliers.
-                In this workplace, you get to learn how to handle customers in different ways.
-                All customers have different requirements which they place on the staff.
+            <p>In this workplace, I have learned to handle customers, all with different requirements and wishes.
+                Large focus on service and accuracy.
             </p>
             <h6>ICA Kvantum - Shop Assistant</h6>
             <p>November 2018 - now</p>
-            <p>The main tasks are to restock fruit and vegetables and answer questions from customers.
-                In this job, it is important to be accurate and flexible.
-                You must be able to switch between tasks in a fast and smooth way.
+            <p>Customer service, inventory and sorting of goods.
+                Teamwork.
             </p>
             <h3 class="qualifications">Qualifications</h3>
             <ul>
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
-                <li>Vue</li>
-                <li>Node</li>
+                <li>Vue.js</li>
+                <li>Node.js</li>
                 <li>PHP</li>
                 <li>MySQL Databases</li>
                 <li>CI/CD</li>
