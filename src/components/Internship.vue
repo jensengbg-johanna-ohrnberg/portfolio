@@ -6,10 +6,9 @@
             <button v-on:click="goToIntelium">Read More...</button>
         </article>
         <article>
-            <h2>Coming Soon...</h2>
-        </article>
-        <article>
-            <h2>Coming Soon...</h2>
+            <img src="../img/mcub_home_1.png" alt="m:CUB Engineering">
+            <h2>m:CUB Engineering</h2>
+            <button v-on:click="goToMcub">Read More...</button>
         </article>
     </section>
 </template>
@@ -19,6 +18,9 @@ export default {
     methods: {
         goToIntelium: function () {
             this.$router.push({ path: 'intelium' });
+        },
+        goToMcub: function () {
+            this.$router.push({ path: 'mcub' });
         }
     }
 }

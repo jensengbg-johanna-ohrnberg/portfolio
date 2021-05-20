@@ -9,6 +9,7 @@ import EWallet from "../views/EWallet.vue";
 import Webshop from "../views/Webshop.vue";
 import MeetUp from "../views/MeetUp.vue";
 import Intelium from "../views/Intelium.vue";
+import Mcub from "../views/Mcub.vue";
 
 Vue.use(VueRouter);
 
@@ -56,6 +57,11 @@ const routes = [{
         path: "/intelium",
         name: "intelium",
         component: Intelium
+    },
+    {
+        path: "/mcub",
+        name: "mcub",
+        component: Mcub
     }
 ];
 
