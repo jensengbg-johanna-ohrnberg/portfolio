@@ -4,16 +4,20 @@
         <section class="compentences">
             <section class="first">
                 <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
+                    <li>HTML4</li>
+                    <li>CSS3/SCSS</li>
                     <li>JavaScript</li>
                     <li>Vue</li>
+                    <li>React</li>
+                    <li>Gatsby</li>
                     <li>Node</li>
                     <li>PHP</li>
                     <li>MySQL Databases</li>
                     <li>CI/CD</li>
                     <li>Parcel</li>
                     <li>Docker</li>
+                    <li>Responsiv Layout</li>
+                    <li>Git</li>
                 </ul>
             </section>
             <section class="second">
